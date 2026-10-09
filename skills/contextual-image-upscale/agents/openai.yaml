@@ -1,0 +1,4 @@
+interface:
+  display_name: "Contextual Image Upscale"
+  short_description: "Enhance photos and artwork in two or three passes"
+  default_prompt: "Use $contextual-image-upscale to enhance this image in two passes and export an 8K PNG."
