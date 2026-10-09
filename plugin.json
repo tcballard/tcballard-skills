@@ -1,0 +1,29 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "tcballard-skills",
+  "version": "0.1.0",
+  "description": "Maintained public skills for Codex, starting with contextual image enhancement and verified 8K export.",
+  "author": {
+    "name": "Tom Ballard",
+    "url": "https://github.com/tcballard"
+  },
+  "homepage": "https://github.com/tcballard/tcballard-skills",
+  "repository": "https://github.com/tcballard/tcballard-skills",
+  "license": "Apache-2.0",
+  "keywords": ["codex", "skills", "image-upscale", "contextual-image-enhancement"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "@tcballard Skills",
+        "shortDescription": "Maintained public workflows for Codex.",
+        "longDescription": "Public skills maintained separately from personal workflows. Contextual Image Upscale guides two or three passes of faithful AI crop enhancement, registration, blending, and verified export using the host's available tools.",
+        "developerName": "Tom Ballard",
+        "category": "Productivity",
+        "capabilities": ["Read", "Write"],
+        "defaultPrompt": [
+          "Use $contextual-image-upscale to enhance this photo or illustration in two passes and export an 8K PNG."
+        ]
+      }
+    }
+  }
+}
